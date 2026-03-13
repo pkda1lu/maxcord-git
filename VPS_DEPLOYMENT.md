@@ -114,7 +114,7 @@ npm install --production
 
 ```bash
 # Создание файла .env
-nano /var/www/zvon/server/.env
+nano /var/www/maxcord/server/.env
 ```
 
 Добавьте следующие переменные:
@@ -154,14 +154,14 @@ openssl rand -base64 32
 ## Шаг 8: Создание директории для загрузок
 
 ```bash
-mkdir -p /var/www/zvon/server/uploads
-chmod 755 /var/www/zvon/server/uploads
+mkdir -p /var/www/maxcord-git/server/uploads
+chmod 755 /var/www/maxcord-git/server/uploads
 ```
 
 ## Шаг 9: Запуск приложения через PM2
 
 ```bash
-cd /var/www/zvon/server
+cd /var/www/maxcord-git/server
 
 # Запуск приложения
 pm2 start server.js --name maxcord-server
